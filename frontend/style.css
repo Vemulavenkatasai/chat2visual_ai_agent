@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #343541;
+    color: white;
+}
+
+/* Chat Area */
+#chat {
+    height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages */
+.message {
+    max-width: 75%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 12px;
+    animation: fadeIn 0.3s ease;
+}
+
+.user {
+    background: #0084ff;
+    margin-left: auto;
+}
+
+.bot {
+    background: #444654;
+}
+
+/* Chart Box */
+.chart-box {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+/* Input Area */
+#inputArea {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background: #40414f;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+#query {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    background: #19c37d;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #15a96b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
